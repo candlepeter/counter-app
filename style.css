@@ -1,0 +1,70 @@
+:root {
+  --redColor: red;
+  --greenColor: green;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  background-image: url(./images/bg-mobile.png);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.wrapper {
+  width: 250px;
+  display: grid;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+#count-el {
+  margin: -0.1em 0 0.5em 0;
+}
+
+.wrapper > *:nth-child(4) {
+  margin-top: 0.5em;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0.8em 1.2em;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  width: 220px;
+  place-self: center;
+}
+
+#increment-el {
+  background-color: var(--redColor);
+}
+
+#save-el {
+  background-color: var(--greenColor);
+}
+
+#entires-el {
+  font-size: 1em;
+}
